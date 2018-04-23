@@ -7,6 +7,6 @@ reqobj.onreadystatechange = function() {
 };
 var btn=document.getElementById('bt');
 btn.onclick=function(){
-reqobj.open("GET", "https://imad.hasura.io/ruchitesh", true);
+reqobj.open("GET", "http://ruchitesh22.imad.hasura-app.io/ruchitesh", true);
 reqobj.send();
 };
