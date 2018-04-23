@@ -11,12 +11,12 @@ var counter=0;
 function moveRight(){
     counter=counter+1;
     if(counter%2===0)
-   { marginLeft=marginLeft+5;
+   { marginLeft=marginLeft+50;
     img.style.marginLeft=marginLeft+'px';
    }
    else
    {
-     marginLeft=marginLeft+5;
+     marginLeft=marginLeft+50;
     img.style.marginRight=marginLeft+'px';   
    }
 }
