@@ -4,7 +4,44 @@ var path = require('path');
 
 var app = express();
 app.use(morgan('combined'));
+var articles = {
+'article-one':{
+    'title':'article1',
+    'content':`
+  <h1>Article-One</h1>
+  <p>This is the paragraph of article-one</p>
+  `},
+'article-two':{
+    'title':'article2',
+    'content':`
+  <h1>Article-Two</h1>
+  <p>This is the paragraph of article-Two</p>
+  `}
+};
 
+function createtemp(data){
+    var title=data.title;
+    var content=data.content;
+    var htmlTemp={
+        temp:`
+        <html>
+        <head>
+        <title>
+        ${title}
+        </title>
+        </head>
+        <body>
+        ${content}
+        </body>
+        </html>
+        `
+    };
+    return htmlTemp.temp;
+    
+}
+app.get('/:articlename',function(req,res){
+    res.send(createtemp(articles[articlename]));
+});
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
@@ -12,9 +49,7 @@ app.get('/', function (req, res) {
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
-app.get('/the-first-file',function(req,res){
-    res.send('This is the first file !!');
-});
+
 app.get('/ui/madi.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
 });
