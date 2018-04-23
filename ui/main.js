@@ -10,7 +10,7 @@ var marginLeft=0;
 var counter=0;
 function moveRight(){
     counter=counter+1;
-    if(counter%2===0)
+    if(counter%2==0)
    { marginLeft=marginLeft+50;
     img.style.marginLeft=marginLeft+'px';
     counter=1;
