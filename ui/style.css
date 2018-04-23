@@ -26,6 +26,6 @@ html{
     height: 200px;
 }
 #rpm{
-    text-align:center;
+    margin:0 auto;
     display:block;
 }
