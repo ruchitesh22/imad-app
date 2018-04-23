@@ -13,11 +13,13 @@ function moveRight(){
     if(counter%2===0)
    { marginLeft=marginLeft+50;
     img.style.marginLeft=marginLeft+'px';
+    counter=1;
    }
    else
    {
      marginLeft=marginLeft+50;
-    img.style.marginRight=marginLeft+'px';   
+    img.style.marginRight=marginLeft+'px';  
+    counter=0;
    }
 }
 img.onclick=function(){
