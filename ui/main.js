@@ -2,9 +2,9 @@
 
 var btn=document.getElementById('bt');
 btn.onclick=function(){
-var reqobj= new new XMLHttpRequest();
+var reqobj=new XMLHttpRequest();
 reqobj.onreadystatechange = function() {
-    //if (this.readyState === XMLHttpRequest.DONE && this.status === 200) 
+    if (this.readyState === XMLHttpRequest.DONE && this.status === 200) 
     {
        // Typical action to be performed when the document is ready:
        console.log(reqobj.responseText.toString());
