@@ -11,7 +11,7 @@ var counter=0;
 function moveRight(){
     counter=counter+1;
     if(counter%2===0)
-   { marginLeft=marginLeft+3;
+   { marginLeft=marginLeft+5;
     img.style.marginLeft=marginLeft+'px';
    }
    else
