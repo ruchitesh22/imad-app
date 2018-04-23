@@ -5,6 +5,8 @@ reqobj.onreadystatechange = function() {
        document.getElementById("c").innerHTML = reqobj.responseText;
     }
 };
-
+var btn=document.getElementById('bt');
+btn.onclick=function(){
 reqobj.open("GET", "https://imad.hasura.io/ruchitesh", true);
 reqobj.send();
+};
