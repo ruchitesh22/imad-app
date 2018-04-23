@@ -5,7 +5,7 @@ btn.onclick=function(){
 var reqobj=new XMLHttpRequest();
 console.log('hello');
 reqobj.onreadystatechange = function() {
-    if (this.readyState === XMLHttpRequest.DONE && this.status === 200) 
+    if (this.readyState === 4 && this.status === 200) 
     {
        // Typical action to be performed when the document is ready:
        console.log(reqobj.responseText.toString());
