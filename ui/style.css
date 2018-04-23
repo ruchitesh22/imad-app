@@ -29,7 +29,8 @@ html{
     margin:60px auto;
     display:block;
 }
-hr{
+#special
+{
    
     border: 1px solid #000;
     width: 400px;
