@@ -22,8 +22,8 @@ var articles = {
 function createtemp(data){
     var title=data.title;
     var content=data.content;
-    var htmlTemp={
-        temp:`
+    var htmlTemp=
+        `
         <html>
         <head>
         <title>
@@ -34,9 +34,8 @@ function createtemp(data){
         ${content}
         </body>
         </html>
-        `
-    };
-    return htmlTemp.temp;
+        `;
+    return htmlTemp;
     
 }
 app.get('/:articlename',function(req,res){
