@@ -2,7 +2,7 @@ body {
     font-family: sans-serif;
     background-color: lightgrey;
     margin-top: 75px;
-     margin:0 auto;
+    
     
 }
 html{
@@ -26,5 +26,5 @@ html{
     height: 200px;
 }
 #rpm{
-   
+    margin:0 auto;
 }
