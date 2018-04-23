@@ -1,16 +1,9 @@
-console.log('Loaded!');
-var data=document.getElementById('special');
-data.innerHTML='My New Data';
-var img=document.getElementById('myimg');
-img.onclick=function(){
-    console.log('Hello');
-    img.style.marginLeft='100px';
+var reqobj= new new XMLHttpRequest();
+reqobj.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+       // Typical action to be performed when the document is ready:
+       document.getElementById("c").innerHTML = reqobj.responseText;
+    }
 };
-var marginLeft=0;
-function moveRight(){
-    marginLeft=marginLeft+1;
-    img.style.marginLeft=marginLeft+'px';
-}
-img.onclick=function(){
-var interval=setInterval(moveRight,5);
-};
+xhttp.open("GET", "https://imad.hasura.io/ruchitesh", true);
+xhttp.send();
