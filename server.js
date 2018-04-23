@@ -38,6 +38,11 @@ function createtemp(data){
     return htmlTemp;
     
 }
+var counter=0;
+app.get('/ruchitesh',function(req,res){
+   counter=counter+1;
+   res.send(counter.toString());
+});
 app.get('/:articlename',function(req,res){
     var articlename=req.params.articlename;
     res.send(createtemp(articles[articlename]));
