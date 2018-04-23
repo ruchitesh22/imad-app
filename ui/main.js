@@ -5,5 +5,6 @@ reqobj.onreadystatechange = function() {
        document.getElementById("c").innerHTML = reqobj.responseText;
     }
 };
-xhttp.open("GET", "https://imad.hasura.io/ruchitesh", true);
-xhttp.send();
+
+reqobj.open("GET", "https://imad.hasura.io/ruchitesh", true);
+reqobj.send();
