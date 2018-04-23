@@ -3,6 +3,7 @@
 var btn=document.getElementById('bt');
 btn.onclick=function(){
 var reqobj=new XMLHttpRequest();
+console.log('hello');
 reqobj.onreadystatechange = function() {
     if (this.readyState === XMLHttpRequest.DONE && this.status === 200) 
     {
