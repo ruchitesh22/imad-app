@@ -11,7 +11,8 @@ reqobj.onreadystatechange = function() {
        console.log(reqobj.responseText.toString());
        document.getElementById('c').innerHTML = reqobj.responseText.toString();
     }
-};
+    
 };
 reqobj.open("GET", "http://ruchitesh22.imad.hasura-app.io/ruchitesh", true);
 reqobj.send(null);
+};
