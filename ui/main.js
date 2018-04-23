@@ -7,9 +7,18 @@ img.onclick=function(){
     img.style.marginLeft='100px';
 };
 var marginLeft=0;
+var counter=0;
 function moveRight(){
-    marginLeft=marginLeft+1;
+    counter=counter+1;
+    if(counter%2===0)
+   { marginLeft=marginLeft+1;
     img.style.marginLeft=marginLeft+'px';
+   }
+   else
+   {
+     marginLeft=marginLeft+10;
+    img.style.marginRight=marginLeft+'px';   
+   }
 }
 img.onclick=function(){
 var interval=setInterval(moveRight,5);
